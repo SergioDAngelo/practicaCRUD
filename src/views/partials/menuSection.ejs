@@ -1,0 +1,25 @@
+<!-- Menu Section -->
+<div class="ps-row ps-padding-64" id="menu">
+    <div class="ps-col l6 ps-padding-large">
+      <h1 class="ps-center">Nuentro Menu</h1>
+      <br />
+      <% products.forEach(products =>{ %>
+             <h4>
+              <%= products.name%>
+              </h4>
+              <p class="ps-text-grey">
+              <%= products.description %> $$$ <%= products.price %>
+      </p>
+      <br />
+      <%})%>
+     
+    </div>
+
+    <div class="ps-col l6 ps-padding-large ps-img-menu">
+      <img
+        src="/images/menu.jpg"
+        class="ps-round ps-image ps-opacity-min"
+        alt="Menu"
+      />
+    </div>
+  </div>
